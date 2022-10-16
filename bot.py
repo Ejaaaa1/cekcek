@@ -44,7 +44,7 @@ logger = logging.getLogger(__name__)
 
 
 akunUser = Config.AUTH_USERS
-SERVER = SERVER
+SERVER = Config.SERVER
 
 
 api_id = 13593788
