@@ -1,0 +1,54 @@
+{
+  "name": "MamiRecord",
+  "description": "BAYMAX STREAMING",
+  "keywords": [
+    "telegram",
+    "best",
+    "youtube",
+    "downloader",
+    "open",
+    "source",
+    "multi",
+    "purpose",
+    "ffmpeg",
+    "remote",
+    "uploader"
+  ],
+  "success_url": "",
+  "website": "",
+  "repository": "",
+  "stack": "heroku-18",
+  "env": {
+    "WEBHOOK": {
+      "description": "",
+      "value": "ANYTHING"
+    },
+    "BOT_TOKEN": {
+      "description": "",
+      "value": "5679681575:AAFlcZCEmSF4TgzcbSNO0_kOeP9DteZVWPA"
+    },
+    "AUTH_USERS": {
+      "description": "",
+      "value": "1352705741"
+    },
+    "FWD_API": {
+      "description": "",
+      "value": "-1001688810274"
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "https://github.com/verbit-ai/rtmpdump-buildpack.git"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
